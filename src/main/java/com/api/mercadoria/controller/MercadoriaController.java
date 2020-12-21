@@ -1,8 +1,6 @@
 package com.api.mercadoria.controller;
 
 import java.util.List;
-import java.util.Scanner;
-
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -24,7 +22,6 @@ import com.api.mercadoria.repository.MercadoriaRepository;
 @RequestMapping("/mercadoria")
 public class MercadoriaController {
 
-	Scanner scanner = new Scanner(System.in);
 
 	@Autowired
 	MercadoriaRepository mr;
