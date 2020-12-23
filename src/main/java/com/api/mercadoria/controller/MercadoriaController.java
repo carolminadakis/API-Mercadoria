@@ -2,6 +2,8 @@ package com.api.mercadoria.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -30,7 +32,7 @@ public class MercadoriaController {
 	//Adicionando informação na tabela
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
-	public Mercadoria adicionar(@RequestBody Mercadoria mercadoria) {
+	public Mercadoria adicionar(@Valid @RequestBody Mercadoria mercadoria) {
 		return mr.save(mercadoria);
 	}
 	
@@ -53,7 +55,7 @@ public class MercadoriaController {
 
 	//Altera informação, informando o id
 	@PutMapping("/{id}")
-	public ResponseEntity<Mercadoria> alterar(@PathVariable long id, @RequestBody Mercadoria mercadoria) {
+	public ResponseEntity<Mercadoria> alterar(@PathVariable long id, @Valid @RequestBody Mercadoria mercadoria) {
 		Mercadoria mercadoriaEncontrada = mr.findById(id);
 		
 		if(mercadoriaEncontrada == null) {
