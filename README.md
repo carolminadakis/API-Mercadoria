@@ -12,7 +12,7 @@ Banco de Dados utilizado para armazenamentos de dados: MySQL
 
 Na classe Controller possuímos os seguintes métodos: GET, POST, PUT e DELET.
 
-Método POST faz é responsável pelo cadastramento das mercadorias, onde são necessários o preenchimento do nome, descrição e valor da mercadoria,
+Método POST faz é responsável pelo cadastramento das mercadorias, onde são necessários o preenchimento do nome, descrição, valor e quantidade da mercadoria,
 não sendo permitido deixar nenhum campo nulo ou em branco.
 
 Com o método GET, é possível buscarmos no banco de dados a lista de todas as mercadorias cadastradas, 
