@@ -7,7 +7,5 @@ import com.api.mercadoria.model.Mercadoria;
 
 @Repository
 public interface MercadoriaRepository extends JpaRepository<Mercadoria, Long>{
-	
 	Mercadoria findById(long id);
-
 }
