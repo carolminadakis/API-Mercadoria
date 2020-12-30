@@ -6,7 +6,9 @@ API Rest criada para cadastramento de mercadorias, nas quais devem conter:
 
 2- Descrição;
 
-3- Preço.
+3- Preço;
+
+4- Quantidade.
 
 Banco de Dados utilizado para armazenamentos de dados: MySQL
 
